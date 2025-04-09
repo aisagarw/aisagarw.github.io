@@ -55,6 +55,11 @@
       text-decoration: underline;
     }
 
+.highlight-text {
+  color: #924141; 
+  font-weight: 800;
+}
+
     .info-section p {
       margin-bottom: 0.75rem;
     }
@@ -81,16 +86,73 @@
   color: #6c757d;
 }
 
-.highlight-text {
-  color: #924141; 
-  font-weight: 800;
-}
+
 
 	  strong,
 b {
   font-weight: 800 ;
   color: #000; /* Ensures solid black if text color is subdued */
 }
+
+	  .publications {
+  font-family: 'EB Garamond', serif;
+  color: #222;
+}
+
+.publications h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.publications h3, .publications h4 {
+  font-weight: 600;
+  margin-top: 2rem;
+  color: #333;
+}
+
+.publications ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.publications li {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.publications li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: #666;
+  font-size: 1rem;
+}
+
+.publications a {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.publications a:hover {
+  text-decoration: underline;
+}
+
+.publications .conf {
+  font-weight: bold;
+  color: #000;
+}
+
+.publications .highlight {
+  color: #C0392B;
+  font-weight: 600;
+}
+
 
 	  
 
@@ -206,168 +268,96 @@ b {
 
   
 
-  <div class="container publications mt-5">
-    <h2>Publications</h2>
+ <div class="container publications mt-5">
+  <h2>Publications</h2>
 
-    <h4 class="mt-4">2025</h4>
-    <ul>
-      <li>
-                            <a href="https://arxiv.org/abs/2409.02429" target="_blank">
-                                <b>Training-free Color-Style Disentanglement for Constrained Text-to-Image Synthesis</b>
-                            </a>
-                            <br/>
-                            In <a>
-                                <b>
-                                    Computer Vision and Pattern Recognition Workshop (CVPRW): AI for Creative Visual Content Generation Editing and Understanding</b></a>, 2025.
-                            <br/>
-			</li>
+  <h4>2025</h4>
+  <ul>
+    <li>
+      <a href="https://arxiv.org/abs/2409.02429" target="_blank">
+        Training-free Color-Style Disentanglement for Constrained Text-to-Image Synthesis
+      </a><br/>
+      In <span class="conf">Computer Vision and Pattern Recognition Workshop (CVPRW)</span>, 2025.
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/2411.16788" target="_blank">
+        TIDE: Training Locally Interpretable Domain Generalization Models Enables Test-time Correction
+      </a><br/>
+      In <span class="conf">Computer Vision and Pattern Recognition (CVPR)</span>, 2025 <span class="highlight">(Highlight)</span>.
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/2406.10197" target="_blank">
+        Composing Parts for Expressive Object Generation
+      </a><br/>
+      In <span class="conf">Computer Vision and Pattern Recognition (CVPR)</span>, 2025.
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/2311.11919" target="_blank">
+        An Image is Worth Multiple Words: Multi-attribute Inversion for Constrained Text-to-Image Synthesis
+      </a><br/>
+      In <span class="conf">Winter Conference on Applications of Computer Vision (WACV)</span>, 2025.
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/2406.18893" target="_blank">
+        AlignIT: Enhancing Prompt Alignment in Customization of Text-to-Image Models
+      </a><br/>
+      In <span class="conf">Winter Conference on Applications of Computer Vision (WACV)</span>, 2025.
+    </li>
+  </ul>
 
-			<li>
-                            <a href="https://arxiv.org/abs/2411.16788" target="_blank">
-                                <b>TIDE: Training Locally Interpretable Domain Generalization Models Enables Test-time Correction</b>
-                            </a>
-                            <br/>
-                            In <a>
-                                <b>
-                                    Computer Vision and Pattern Recognition (CVPR)</b></a>, 2025.
-                            <br/>
-			</li>
-			    
-                        <li>
-                            <a href="https://arxiv.org/abs/2406.10197" target="_blank">
-                                <b>Composing Parts for Expressive Object Generation</b>
-                            </a>
-                            <br/>
-                            In <a>
-                                <b>
-                                    Computer Vision and Pattern Recognition (CVPR)</b></a>, 2025.
-                            <br/>
-			</li>
+  <h4>2024</h4>
+  <ul>
+    <li>
+      <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Joseph_Iterative_Multi-Granular_Image_Editing_Using_Diffusion_Models_WACV_2024_paper.pdf" target="_blank">
+        Iterative Multi-Granular Image Editing Using Diffusion Models
+      </a><br/>
+      In <span class="conf">Winter Conference on Applications of Computer Vision (WACV)</span>, 2024.
+    </li>
+  </ul>
 
-			<li>
-			    <a href="https://arxiv.org/abs/2311.11919" target="_blank">
-                                <b>An Image is Worth Multiple Words: Multi-attribute Inversion for Constrained Text-to-Image Synthesis</b>
-                            </a>
-                            <br/>
+  <h4>2023</h4>
+  <ul>
+    <li>
+      <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Agarwal_A-STAR_Test-time_Attention_Segregation_and_Retention_for_Text-to-image_Synthesis_ICCV_2023_paper.pdf" target="_blank">
+        ASTAR: Test-time Attention Segregation and Retention for Text-to-image Synthesis
+      </a><br/>
+      In <span class="conf">International Conference on Computer Vision (ICCV)</span>, 2023.
+    </li>
+    <li>
+      <a href="https://dl.acm.org/doi/abs/10.1145/3587819.3590980" target="_blank">
+        SketchBuddy: Context-Aware Sketch Enrichment and Enhancement
+      </a><br/>
+      In <span class="conf">ACM Multimedia Systems Conference (ACM MMSys)</span>, 2023.
+    </li>
+    <li>
+      <a href="https://openaccess.thecvf.com/content/WACV2023/papers/Agarwal_Contrastive_Learning_of_Semantic_Concepts_for_Open-Set_Cross-Domain_Retrieval_WACV_2023_paper.pdf" target="_blank">
+        Contrastive Learning of Semantic Concepts for Open-set Cross-domain Retrieval
+      </a><br/>
+      In <span class="conf">Winter Conference on Applications of Computer Vision (WACV)</span>, 2023.
+    </li>
+  </ul>
 
-                            In <a>
-                                <b>
-                                    Winter Conference on Applications of Computer Vision (WACV)</b></a>, 2025.
-                            <br/>
-                        </li>
-                        
-                        <li>
-			    <a href="https://arxiv.org/abs/2406.18893" target="_blank">
-                                <b>AlignIT: Enhancing Prompt Alignment in Customization of Text-to-Image Models</b>
-                            </a>
-                            <br/>
+  <h4>2022</h4>
+  <ul>
+    <li>
+      <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548160" target="_blank">
+        Semantics-Driven Generative Replay for Few-Shot Class Incremental Learning
+      </a><br/>
+      In <span class="conf">ACM International Conference on Multimedia (ACM MM)</span>, 2022.
+    </li>
+  </ul>
 
-<!-- 			    href="https://wacv2025.thecvf.com/home" target="_blank" -->
-                            In <a>
-                                <b>
-                                    Winter Conference on Applications of Computer Vision (WACV)</b></a>, 2025.
-                            <br/>
-                        </li>
-		    </ul>
+  <h4>2021</h4>
+  <ul>
+    <li>
+      <a href="https://aclanthology.org/2021.naacl-main.418/" target="_blank">
+        MIMOQA: Multimodal Input Multimodal Output Question Answering
+      </a><br/>
+      In <span class="conf">North American Chapter of the Association for Computational Linguistics (NAACL-HLT)</span>, 2021.
+    </li>
+  </ul>
+</div>
 
-		    <h3>2024</h3>
-                    <ul class="pl">
-                        
-                        <li>
-
-			    <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Joseph_Iterative_Multi-Granular_Image_Editing_Using_Diffusion_Models_WACV_2024_paper.pdf" target="_blank">
-                                <b>Iterative Multi-Granular Image Editing Using Diffusion Models</b>
-                            </a>
-                            <br/>
-
-<!-- 			    href="https://wacv2024.thecvf.com/home" target="_blank" -->
-                            In <a>
-                                <b>
-                                    Winter Conference on Applications of Computer Vision (WACV)</b></a>, 2024.
-                            <br/>
-
-
-				
-                        </li>
-		    </ul>
-
-                    <h3>2023</h3>
-                    <ul class="pl">
-                        <li>
-                            <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Agarwal_A-STAR_Test-time_Attention_Segregation_and_Retention_for_Text-to-image_Synthesis_ICCV_2023_paper.pdf" target="_blank">
-                                <b>ASTAR: Test-time Attention Segregation and Retention for Text-to-image Synthesis</b>
-                            </a>
-                            <br/>
-<!-- 			     href="https://iccv2023.thecvf.com/" target="_blank" -->
-                            In <a>
-                                <b>
-                                    International Conference on Computer Vision (ICCV)</b></a>, 2023.
-                            <br/>
-
-			</li>
-                        <li>
-			    <a href="https://dl.acm.org/doi/abs/10.1145/3587819.3590980" target="_blank">
-                                <b>SketchBuddy: Context-Aware Sketch Enrichment and Enhancement</b>
-                            </a>
-                            <br/>
-
-<!-- 			    href="https://2023.acmmmsys.org/" target="_blank" -->
-                            In <a>
-                                <b>
-                                    ACM Multimedia Systems Conference (ACM MMSys)</b></a>, 2023.
-                            <br/>
-
-			</li>
-                        <li>
-
-			    <a href="https://openaccess.thecvf.com/content/WACV2023/papers/Agarwal_Contrastive_Learning_of_Semantic_Concepts_for_Open-Set_Cross-Domain_Retrieval_WACV_2023_paper.pdf" target="_blank">
-                                <b>Contrastive Learning of Semantic Concepts for Open-set Cross-domain Retrieval</b>
-                            </a>
-                            <br/>
-
-<!-- 			    href="https://wacv2023.thecvf.com/home" target="_blank" -->
-                            In <a>
-                                <b>
-                                    Winter Conference on Applications of Computer Vision (WACV)</b></a>, 2023.
-                            <br/>
-
-
-				
-                        </li>
-		    </ul>
-		    <h3>2022</h3>
-                    <ul class="pl">
-                        <li>
-                            <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548160" target="_blank">
-                                <b>Semantics-Driven Generative Replay
-for Few-Shot Class Incremental Learning</b>
-                            </a>
-                            <br/>
-
-<!-- 			    href="https://2022.acmmm.org/" target="_blank" -->
-                            In <a>
-                                <b>
-                                    ACM International Conference on Multimedia (ACM MM)</b></a>, 2022.
-                            <br/>
-			</li>
-		    </ul>
-                    <h3>2021</h3>
-                    <ul class="pl">
-                        <li>
-                            <a href="https://aclanthology.org/2021.naacl-main.418/" target="_blank">
-                                <b>MIMOQA: Multimodal Input Multimodal Output Question Answering</b>
-                            </a>
-                            <br/>
-
-<!-- 		            href="https://2021.naacl.org/" target="_blank" -->
-                            In <a>
-                                <b>
-                                    North American Chapter of the Association for Computational Linguistics
-                                    (NAACL-HLT)</b></a>, 2021.
-                            <br/>
-			</li>
-    </ul>
-  </div>
 
   <footer>
     &copy; 2025 Aishwarya Agarwal
