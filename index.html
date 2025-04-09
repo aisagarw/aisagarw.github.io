@@ -74,6 +74,18 @@
       font-size: 0.9rem;
       color: #777;
     }
+
+	  .timeline-date {
+  font-weight: 500;
+  font-family: 'EB Garamond', serif;
+  color: #6c757d;
+}
+
+.highlight-text {
+  color: #365e7c; /* A nice deep indigo/teal tone */
+  font-weight: 500;
+}
+
   </style>
 </head>
 <body>
@@ -119,55 +131,67 @@
   </div>
 </div>
 
-  <!-- Vertical separator and News -->
+ <!-- News Section -->
 <div class="container py-5">
-  <div class="row">
-    <!-- Vertical Line -->
-    <div class="col-md-1 d-none d-md-flex justify-content-center">
-      <div style="border-left: 1px solid #ccc; height: 100%;"></div>
-    </div>
+  <h2 class="mb-4">News</h2>
+  <div class="timeline">
+    <ul class="list-unstyled">
+      <li class="mb-4 d-flex">
+        <div class="timeline-date text-muted pe-4" style="min-width: 140px;">March 28, 2025</div>
+        <div>
+          Our work on enabling disentangled color-style control in diffusion models got accepted in <b>CVPR CVEU Workshop 2025</b>!
+        </div>
+      </li>
 
-    <!-- News Section -->
-    <div class="col-md-11">
-      <h2 class="mb-4">News</h2>
-      <ul class="list-unstyled">
-       
-        <li class="mb-3">
-          <strong>[March 28, 2025]</strong> Our work on enabling disentagnled color-style control in diffusion models got accepted in CVPR CVEU workshop 2025!
-        </li>
+      <li class="mb-4 d-flex">
+        <div class="timeline-date text-muted pe-4">Feb 27, 2025</div>
+        <div>
+          Two papers accepted at <b>CVPR 2025</b>. Our paper <span class="highlight-text">TIDE</span> on training locally interpretable models is selected as a <span class="highlight-text">Highlight</span>! 
+        </div>
+      </li>
 
-        
-        <li class="mb-3">
-          <strong>[Feb 27, 2025]</strong> Two papers accepted at <strong>CVPR 2025</strong>. Our paper <b>TIDE</b> on training locally interpretable models is selected as a <b>Highlight</b>! 
-        </li>
+      <li class="mb-4 d-flex">
+        <div class="timeline-date text-muted pe-4">Oct 29, 2024</div>
+        <div>
+          Two papers accepted at <b>WACV 2025</b> on training-free diffusion model customization while balancing <span class="highlight-text">reconstruction-editability tradeoff</span>.
+        </div>
+      </li>
 
-        <li class="mb-3">
-          <strong>[Oct 29, 2024]</strong> Two papers accepted at <strong>WACV 2025</strong>. These works propose training-free methods to customize diffusion models, while mitigating the reconstruction-editability tradeoff.
-        </li>
+      <li class="mb-4 d-flex">
+        <div class="timeline-date text-muted pe-4">Oct 23, 2023</div>
+        <div>
+          Our iterative image editing work using diffusion models is accepted to <b>WACV 2024</b>.
+        </div>
+      </li>
 
-        <li class="mb-3">
-          <strong>[Oct 23, 2023]</strong> Our work on using diffusion models for iterative image editing is accepted to <strong>WACV 2024</strong>.
-        </li>
+      <li class="mb-4 d-flex">
+        <div class="timeline-date text-muted pe-4">Jul 14, 2023</div>
+        <div>
+          Work on improving <span class="highlight-text">image-text alignment</span> in diffusion models accepted to <b>ICCV 2023</b>!
+        </div>
+      </li>
 
-        <li class="mb-3">
-          <strong>[Jul 14, 2023]</strong> Our work on improving image-text alignment in diffusion models is accepted to <strong>ICCV 2023</strong>!
-        </li>
+      <li class="mb-4 d-flex">
+        <div class="timeline-date text-muted pe-4">Mar 4, 2023</div>
+        <div>
+          <i>Sketchbuddy</i>, our project on <span class="highlight-text">assisted sketching</span>, is accepted to <b>ACM MMSys 2023</b>. Part of my undergrad internship at Adobe!
+        </div>
+      </li>
 
-        <li class="mb-3">
-          <strong>[Mar 4, 2023]</strong> Our work Sketchbuddy, where we provide automated assistance while sketching, is accepted to ACM MMSys 2023. This was part of my internship project at Adobe during undergrad!
-        </li>
+      <li class="mb-4 d-flex">
+        <div class="timeline-date text-muted pe-4">Aug 26, 2022</div>
+        <div>
+          Research on <span class="highlight-text">open-set cross-domain generalization</span> accepted to <b>WACV 2023</b> — part of my IITB thesis with Adobe.
+        </div>
+      </li>
 
-        <li class="mb-3">
-          <strong>[Aug 26, 2022]</strong> Our work on open-set cross-domain generalization is accepted to WACV 2023. This was part of my thesis at IITB, in collaboration with Adobe Research.
-        </li>
-
-        <li class="mb-3">
-          <strong>[June 24, 2023]</strong> Our work on few-shot class-incremental learning is accepted to ACM Multimedia 2022. My first paper as a lead researcher, all thanks to my advisor Prof. Biplab!
-        </li>
-
-        	
-      </ul>
-    </div>
+      <li class="mb-4 d-flex">
+        <div class="timeline-date text-muted pe-4">June 24, 2022</div>
+        <div>
+          Our work on <span class="highlight-text">few-shot class-incremental learning</span> accepted to <b>ACM Multimedia 2022</b>. My first lead-author paper with Prof. Biplab!
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 
